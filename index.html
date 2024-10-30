@@ -11,25 +11,125 @@
     defer></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="styles.css">
-
+  <script id="debug-script" src="https://cdn.jsdelivr.net/gh/MickShannahan/style-debug@latest/debug.min.js"
+    defer></script>
   <title>Ice Cream</title>
 </head>
 
-<body>
-  <header>
-    <section class="container-fluid">
-      <nav class="row">
-        Ice Cream
-      </nav>
-      <div class="col-md-5">
-      </div>
-      <div class="col-md-7"></div>
-      </div>
-    </section>
-
+<body class="debug">
+  <header class="container-fluid">
+    <nav class="row d-flex text-center">
+      <h1 class="col">Ice Cream Party Store</h1>
+    </nav>
   </header>
 
   <main>
+    <section class="container-fluid">
+      <div class="row">
+        <div class="col-md-5">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Qty</th>
+                <th>Each</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+            <tfoot>
+              <tr>
+                <th colspan="4">
+                  <div class="text-end">
+                    <p>
+                      Total:
+                      <span>$0.00</span>
+                    </p>
+                    <button class="btn btn-primary">
+                      Pay
+                    </button>
+                  </div>
+                </th>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        <div class="col-md-7">
+          <div class="row d-flex text-center">
+            <h2>Choose your ice cream</h2>
+            <div class="card col-md-4">
+              <p>
+                Vanilla
+                <br>
+                $1.00
+              </p>
+            </div>
+            <div class="card col-md-4">
+              <p>
+                Cookie Dough
+                <br>
+                $1.25
+              </p>
+            </div>
+            <div class="card col-md-4">
+              <p>
+                Strawberry
+                <br>
+                $1.25
+              </p>
+            </div>
+          </div>
+          <div class="row d-flex text-center">
+            <h2>Pick your toppings</h2>
+            <div class="card col-md-4">
+              <p>
+                Sprinkles
+                <br>
+                $.025
+              </p>
+            </div>
+            <div class="card col-md-4">
+              <p>
+                Chocolate chips
+                <br>
+                $0.25
+              </p>
+            </div>
+            <div class="card col-md-4">
+              <p>
+                Gummy worms
+                <br>
+                $0.75
+              </p>
+            </div>
+          </div>
+          <div class="row d-flex text-center">
+            <h2>Choose a cup or a type of cone</h2>
+            <div class="card col-md-4">
+              <p>
+                Waffle cone
+                <br>
+                $3.00
+              </p>
+            </div>
+            <div class="card col-md-4">
+              <p>
+                Sprinkle bowl
+                <br>
+                $7.00
+              </p>
+            </div>
+            <div class="card col-md-4">
+              <p>
+                Cinnamon roll
+                <br>
+                $19.00
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </main>
 

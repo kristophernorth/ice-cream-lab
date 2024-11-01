@@ -24,10 +24,11 @@
   </header>
 
   <main>
-    <section class="container-fluid">
+    <section class="container-fluid text-center">
       <div class="row">
         <div class="col-md-5">
-          <table class="table">
+          <h2>Your ice cream cart</h2>
+          <table class="table border">
             <thead>
               <tr>
                 <th>Name</th>
@@ -36,18 +37,16 @@
                 <th>Total</th>
               </tr>
             </thead>
-            <tbody></tbody>
+            <tbody id="cartItems">
+            </tbody>
             <tfoot>
               <tr>
                 <th colspan="4">
                   <div class="text-end">
                     <p>
-                      Total:
-                      <span>$0.00</span>
+                      Total: <span id="cartTotal">$0.00</span>
                     </p>
-                    <button class="btn btn-primary">
-                      Pay
-                    </button>
+                    <button onclick="checkout()" class="btn btn-primary">Pay</button>
                   </div>
                 </th>
               </tr>
@@ -57,21 +56,21 @@
         <div class="col-md-7">
           <div class="row d-flex text-center">
             <h2>Choose your ice cream</h2>
-            <div onclick="orderVanilla('vanilla')" class="card col-md-4">
+            <div onclick="orderVanilla()" class="card col-md-4">
               <p>
                 Vanilla
                 <br>
                 $1.00
               </p>
             </div>
-            <div class="card col-md-4">
+            <div onclick="orderIceCream('Cookie Dough')" class="card col-md-4">
               <p>
                 Cookie Dough
                 <br>
                 $1.25
               </p>
             </div>
-            <div class="card col-md-4">
+            <div onclick="orderIceCream('Strawberry')" class="card col-md-4">
               <p>
                 Strawberry
                 <br>
@@ -81,23 +80,23 @@
           </div>
           <div class="row d-flex text-center">
             <h2>Pick your toppings</h2>
-            <div class="card col-md-4">
+            <div onclick="orderTopping('Sprinkles')" class="card col-md-4">
               <p>
                 Sprinkles
                 <br>
                 $.025
               </p>
             </div>
-            <div class="card col-md-4">
+            <div onclick="orderTopping('Chocolate Chips')" class="card col-md-4">
               <p>
-                Chocolate chips
+                Chocolate Chips
                 <br>
                 $0.25
               </p>
             </div>
-            <div class="card col-md-4">
+            <div onclick="orderTopping('Gummy Worms')" class="card col-md-4">
               <p>
-                Gummy worms
+                Gummy Worms
                 <br>
                 $0.75
               </p>
@@ -105,23 +104,23 @@
           </div>
           <div class="row d-flex text-center">
             <h2>Choose a cup or a type of cone</h2>
-            <div class="card col-md-4">
+            <div onclick="orderVessel('Waffle Cone')" class="card col-md-4">
               <p>
-                Waffle cone
+                Waffle Cone
                 <br>
                 $3.00
               </p>
             </div>
-            <div class="card col-md-4">
+            <div onclick="orderVessel('Sprinkle Bowl')" class="card col-md-4">
               <p>
-                Sprinkle bowl
+                Sprinkle Rowl
                 <br>
                 $7.00
               </p>
             </div>
-            <div class="card col-md-4">
+            <div onclick="orderVessel('Cinnamon Roll Bowl')" class="card col-md-4">
               <p>
-                Cinnamon roll
+                Cinnamon Roll Bowl
                 <br>
                 $19.00
               </p>
@@ -137,6 +136,7 @@
 
   </footer>
   <script src="app.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
